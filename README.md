@@ -35,7 +35,7 @@ npm install
 - Integrate animations to visually indicate side changes.
 
 ## 🛠️ Technologies
-- Vite + React
+- React + TypeScript + Vite
 - Sass
 - LottieFiles for animations
 - Git for version control
