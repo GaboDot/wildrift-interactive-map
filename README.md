@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+# Wild Rift Interactive Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive **Wild Rift (MOBA) map** with UI controls designed for teaching, coaching, explaining strategies, or similar objectives. This project enables players, trainers, and analysts to visualize rotations, objectives, and lanes from both perspectives (blue side and red side).
 
-Currently, two official plugins are available:
+## ✨ Features
+- 📌 Interactive UI controls for highlighting lanes, jungle areas, and objectives.
+- 🔄 Perspective toggle to switch between blue side and red side views.
+- 🎯 Designed for teaching, coaching, and strategy explanation.
+- 🖼️ Support for animations (e.g., LottieFiles) to indicate side changes.
+- ⚡ Lightweight and easy to integrate into presentations or training sessions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## React Compiler
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+```
+git clone https://github.com/GaboDot/wildrift-interactive-map
+cd wildrift-map
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Development
+```npm run start```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build
+```npm run build```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📖 Usage
+- Load the map in your browser.
+- Use the interactive controls to highlight lanes, objectives, or rotations.
+- Toggle between **blue side** and **red side** perspectives.
+- Integrate animations to visually indicate side changes.
+
+## 🛠️ Technologies
+- Vite + React
+- Sass
+- LottieFiles for animations
+- Git for version control
+
+## 🤝 Contributing
+Contributions are welcome!  
+Feel free to fork the repository and submit pull requests with improvements, bug fixes, or new features.
+
+## 📜 License
+This project is licensed under the MIT License.  
+See the LICENSE file for details.
+
